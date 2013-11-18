@@ -73,7 +73,7 @@ class BuildCommand extends AbstractCommand
             $in = new ArrayInput(array(
                     'command'        => 'propel:sql:insert',
                     '--connection'   => $input->getOption('connection'),
-                    '--verbose'   => $input->getOption('verbose')
+                    '--verbose'   => $input->getOption('verbose'),
                     '--force'        => true,
             ));
             $insertCommand = $this->getApplication()->find('propel:sql:insert');
